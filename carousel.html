@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>carousel_by_css</title>
+
+	<style type="text/css">
+	.nav { margin:0px; position: absolute; width:260px; height:180px; left:50%; margin-left:-130px; top:50%; margin-top:-90px; overflow: hidden;  padding:0px;}
+	.nav li{position:absolute; top:0; left:0px; margin:0px; padding:0px; list-style-type: none; z-index:1; width:260px; height:180px;}
+	.nav li:nth-child(1) { animation: carousel-in1 35s linear 30s infinite normal; background-color:#47c1a8;}
+
+	.nav li:nth-child(2) { animation: carousel-in 35s linear 24s infinite normal; background-color:#ffdfc6;}
+
+	.nav li:nth-child(3) { animation: carousel-in 35s linear 18s infinite normal; background-color:#e9fcff;}
+
+	.nav li:nth-child(4) { animation: carousel-in 35s linear 12s infinite normal; background-color:#ffe2ee;}
+
+	.nav li:nth-child(5) { animation: carousel-in 35s linear 6s infinite normal; background-color:#e7dbff;}
+
+	.nav li:nth-child(6) { animation: carousel-in 35s linear 0s infinite normal; background-color:#ee4d5c;}
+
+	@keyframes carousel-in {
+		0% {
+			left:0px;
+			top:0px;
+			z-index:2;
+		}
+		16.666% {
+			left:0px;
+			top:0px;
+		}
+		19.9% {
+			left:-260px;
+			top:0px;
+		}
+		50% {
+			left:-260px;
+			top:180px;
+		}
+		66.666% {
+			left:260px;
+			top:180px;
+		}
+		83.333% {
+			left:260px;
+			top:0px;
+		}
+		96.7% {
+			left:260px;
+			top:0px;
+			z-index:1;
+		}
+		100% {
+			left:0px;
+			top:0px;
+			z-index:1;
+		}
+	}
+	@keyframes carousel-in1 {
+		0% {
+			left:0px;
+			top:0px;
+		}
+		6.666% {
+			left:0px;
+			top:0px;
+			z-index:3;
+		}
+		16.666% {
+			left:0px;
+			top:0px;
+		}
+		19.9% {
+			left:-260px;
+			top:0px;
+		}
+		50% {
+			left:-260px;
+			top:180px;
+		}
+		66.666% {
+			left:260px;
+			top:180px;
+		}
+		83.333% {
+			left:260px;
+			top:0px;
+		}
+		96.7% {
+			left:260px;
+			top:0px;
+			z-index:1;
+		}
+		100% {
+			left:0px;
+			top:0px;
+			z-index:1;
+		}
+	}
+	</style>
+</head>
+
+<body>
+	<header id="header">
+		<ul class="nav">
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			
+		</ul>
+	</header>
+</body>
+</html>
